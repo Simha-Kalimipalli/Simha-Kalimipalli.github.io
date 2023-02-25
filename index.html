@@ -1,31 +1,86 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title> Simha </title>
-		
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-			<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Simha Kalimipalli!</h1>
-				<p>I'm Simha Kalimipalli <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        	<!--	<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>-->
-        		<li><a href="https://github.com/Simha-Kalimipalli">github.com/Simha_Kalimipalli</a></li>
-			</ul>
-		</footer>
-	</body>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+
+li a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #FF5733;
+}
+.div_nav{}
+
+.div_nav p{
+font-weight: bold;
+font-family: verdana, sans-serif
+
+}
+
+.div_main{}
+
+.div_main h1{
+font-size: 70px;
+font-weight: bold;
+font-family: verdana, sans-serif
+}
+
+.div_main h2{
+font-size: 40px;
+font-weight: bold;
+font-family: verdana, sans-serif
+}
+
+
+.div_main p{
+font-family: verdana, sans-serif
+}
+</style>
+</head>
+<body>
+<div class="div_nav">
+
+<ul>
+  <li><a href="#home"><p>Home</p></a></li>
+  <li><a href="#about"> <p>About</p></a></li>
+
+  <li><a href="#projects"><p>Projects</p></a></li>
+  <li style="float:right"><a class="active" href="#contact"><p>Contact</p></a></li>
+</ul>
+</div>
+
+
+<div class="div_main"><h1 id="home">Hi, I'm Simha Kalimipalli</h1></div>
+<div class="div_main"><p>abvhvyfyuyuvvv</p></div>
+<hr>
+<div class="div_main"><h2 id="about">About</h2></div>
+<hr>
+<div class="div_main"><h2 id="projects">Projects</h2></div>
+<hr>
+<div class="div_main"><h2 id="contact">Contact</h2></div>
+<hr>
+
+
+
+
+</body>
 </html>
