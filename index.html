@@ -55,10 +55,17 @@ font-family: verdana, sans-serif
 
 
 .div1 {
-       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
      transition: 0.3s;
      border: 3px solid #fff;
      overflow:auto;
+     background: #ffffff;
+     white-space: initial;
+     border-radius: 2%;
+
+
+
+
 }
 
 .div1:hover {
@@ -67,21 +74,39 @@ font-family: verdana, sans-serif
 
 .img_left {
     float: left;
-    width:300px;
     height:300px;
-    background: #000
+    background: #ffffff;
+    padding: 0px 30px 0px 0px;
+    border-radius: 5%;
+
 }
 
 .img_right {
     float: right;
-    width:300px;
     height:300px;
-    background: #000
+    background: #ffffff;
+    border-radius: 5%;
+
+}
+
+.img_small{
+    float: left;
+    height:150px;
+    background: #ffffff;
+    padding: 0px 30px 0px 0px;
+    border-radius: 0%;
 }
 
 .div2 {
-      padding: 15px 15px 15px 15px;
-    float: left
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     transition: 0.3s;
+     border: 3px solid #fff;
+     overflow:auto;
+     background: #ffffff;
+     white-space: initial;
+
+   
+
 }
 .div2 h2{
 font-weight: bold;
@@ -97,7 +122,28 @@ font-family: 'Roboto', sans-serif;
 hr.new5 {
   border: 10px solid grey;
   border-radius: 5px;
+
+
+
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 
 
   
@@ -109,8 +155,8 @@ hr.new5 {
 <ul class="b">
   <li><a href="#home"><p>Home</p></a></li>
   <li><a href="#about"> <p>About</p></a></li>
-
   <li><a href="#projects"><p>Projects</p></a></li>
+  <li><a href="#work"><p>Work</p></a></li>
   <li style="float:right"><a class="active" href="#contact"><p>Contact</p></a></li>
 </ul>
 </div>
@@ -119,22 +165,87 @@ hr.new5 {
 <div class="div_main"><h1 id="home">Hi, I'm Simha Kalimipalli</h1></div>
 <hr>
 <div class="div_main"><h2 id="about">About</h2></div>
-<div class="div_main"><p>  I'm  interested in Data Science and Geo - analytics.</p></div>
 
-<div class="div_main"><p> I am at the University of Waterloo.</p></div>
 
+<div class="div_main"><p> <b>Hello! I am interested in Multidisciplinary Machine Learning based research: </b></p></div>
+<div class="div_main"><p> I use tools such as neural networks and Bayesian times series models to solve key problems across domains such as remote sensing, financial forecasting and urban planning.</p></div>
+
+
+<div class="div_main"><p> I'm currently pursuing a: </p></div>
+
+<!----->
+<div class="div1">
+  <img class="img_small" src="icons/waterloo.png"   alt="Avatar"/>
+ 
+   <div class="div2">
+     <h2> Honors B.A.Sc. in Systems Design Engineering at the University of Waterloo
+       <a href="https://uwaterloo.ca/systems-design-engineering/">
+       <img src="icons/link_logo.jpg"  style="width:20px;height:20px;"     alt="github">
+       </a>
+     </h2>
+ 
+     <ul>
+       <li><p><i>Relevant Coursework: </i> Digital Computation,  Data Structures and Algorithms, Differential Equations (I,II), Linear Algebra (I,II,III)</p></li>
+       <li><p><i>Relevant Projects:</i> 
+        <ul>
+          <li> <u>Solar Tracking Charging Facility</u> - Made Mechnical 3D printed structure, Electrical Circuit with motors and ESP32 and Algorthm for automated tracking using latlong data. </li>
+          <li> <u>Tidal Prediction Algorithm</u> - Used Ananlog tide prediction machine and pythonic prediction method using Fourier tranform to predict tides in Prince Rupert, B.C.. </li>
+          <li> <u>Spring Systems Modelling</u> - Modelled physical spring response using differential equations and Systems Modelling principles in Matlab.</li>
+        </ul>
+        
+        <li><p><i>Relevant Extrcurriculars:</i> 
+          <ul>
+            <li> <u>Machine Learning</u> - WAT AI (Technical Program Manger), Data Science Club (LLM Reading Group Presenter, Computer Vision Group Presenter) </li>
+            <li> <u>Transportation</u> - Institute of Transportation Engineers Member, TriTAG  </li>
+            <li> <u>For Fun!</u> - Socratica (S23 Presenter),  Quizbowl</li>
+          </ul>
+      
+      </li>
+
+     </ul>
+   </div>
+ </div>
+ <br>
+ 
 <hr>
 <div class="div_main"><h2 id="projects">Projects</h2></div>
  
+<!------------------------------------>
 <div class="div1">
- <img class="img_left" src="img_avatar.png" alt="Avatar"/>
+ <img class="img_left" src="images/Toronto.png"   alt="Avatar"/>
 
   <div class="div2">
-    <h2> Line 1 </h2>
+    <h2> Smart City: a case study of Toronto   
+      <a href="https://github.com/Simha-Kalimipalli/toronto-hoods-housing">
+      <img src="icons/github.png"  style="width:20px;height:20px;"     alt="github">
+      </a>
+    </h2>
+
     <ul>
-      <li><p>Coffee</p></li>
-      <li><p>Coffee</p></li>
-      <li><p>Coffee</p></li>
+      <li><p>Performed  machine learning algorithms such as clustering, classification, regression and language processing on Toronto open-source and AirBnB data .  </p></li>
+      <li><p>Identified trends of various neighborhoods.  </p></li>
+      <li><p>Achieved 95% accuracy in algorithms. </p></li>
+    </ul>
+
+  </div>
+
+</div>
+<br>
+<hr class="new5">
+
+<!------------------------------------>
+<div class="div1">
+ <img class="img_right" src="images/dodgeblock.png" alt="Avatar"/>
+
+
+  <div class="div2">
+    <h2> Game of Cadillac 
+      <a href="https://github.com/Simha-Kalimipalli/Game-of-Cadillac">
+        <img src="icons/github.png"  style="width:20px;height:20px;"   alt="github">
+        </a>
+    </h2>
+    <ul>
+      <li><p>A card game that uses OOP Principles and Min/Max AI. </p></li>
     </ul>
   </div>
 
@@ -143,37 +254,340 @@ hr.new5 {
 <hr class="new5">
 
 <!------------------------------------>
+<div class="div1">
+  <img class="img_left" src="images/Waterloo.png"   alt="Avatar"/>
+ 
+   <div class="div2">
+     <h2> Envisioning Waterloo 2030    
+       <a href="https://github.com/Simha-Kalimipalli/WRPDB_EW2030">
+       <img src="icons/github.png"  style="width:20px;height:20px;"     alt="github">
+       </a>
+     </h2>
+ 
+     <ul>
+       <li><p>Performed Data and Geo analytics to find patterns and to provide insights on active and public transportation.   </p></li>
+       <li><p>Proposed and presented plan of action for increasing sustainability in the ROW to Sustainable Waterloo and Climate Action Waterloo. </p></li>
+       <li><p>Created the open-source Waterloo Regional Project Database, containing 400 projects with over 10,000 online impressions. </p></li>
+     </ul>
+ 
+   </div>
+ 
+ </div>
+ <br>
+ <hr class="new5">
+
+<!------------------------------------>
+<div class="div1">
+  <img class="img_right" src="images/bdc2021.png" alt="Avatar"/>
+ 
+ 
+   <div class="div2">
+     <h2> COVID-19 Misinformation Tweets and Network Structures are Highly Similar to Factual Tweets 
+       <a href="https://github.com/Simha-Kalimipalli/UG-Data-Challenge-2021 ">
+         <img src="icons/github.png"  style="width:20px;height:20px;"   alt="github">
+         </a>
+     </h2>
+     <ul>
+       <li><p>The team used network analysis, regression, and dimensionality reduction techniques to predict the veracity of tweets.  </p></li>
+       <li><p>Contributed to text feature extraction to obtain the final datasets for the analysis.</p></li>
+       <li><p>First place (among 100 teams from 39 universities), awarded the Overleaf Outstanding Science communication award.      </p></li>
+       <li><p>Published in STEM Fellowship Journal.      </p></li>
+
+
+     </ul>
+   </div>
+ 
+ </div>
+ <br>
+ <hr class="new5">
+
+<!---------------------------------->
+<div class="div1">
+  <img class="img_left" src="images/gaggle.png"   alt="Avatar"/>
+ 
+   <div class="div2">
+     <h2> Gaggle [Hack the North 2021 submission] 
+       <a href="https://github.com/Simha-Kalimipalli/Gaggle-HacktheNorth-2021">
+       <img src="icons/github.png"  style="width:20px;height:20px;"     alt="github">
+       </a>
+     </h2>
+ 
+     <ul>
+       <li><p>Collaborated with a team to develop an app that helps connects STEM events to students at Canada’s largest hackathon. </p></li>
+     </ul>
+ 
+   </div>
+ 
+ </div>
+ <br>
+ <hr class="new5">
+
+<!------------------------------------>
+<div class="div1">
+  <img class="img_right" src="images/sleep_graph.png" alt="Avatar"/>
+ 
+ 
+   <div class="div2">
+     <h2> Sleepifier.AI [New Year NewHack 2021 submission] 
+       <a href="https://github.com/Simha-Kalimipalli/sleepifier.ai">
+         <img src="icons/github.png"  style="width:20px;height:20px;"   alt="github">
+         </a>
+     </h2>
+     <ul>
+       <li><p>Collaborated to develop an app that helps improve your sleep with advice from a neural network trained on your sleep data.   </p></li>
+
+
+     </ul>
+   </div>
+ 
+ </div>
+ <br>
+ <hr class="new5">
+
+<!------------------------------------>
+<div class="div1">
+  <img class="img_left" src="images/bdc2020.png"   alt="Avatar"/>
+ 
+   <div class="div2">
+     <h2> Investigating Effects of Climate Change on Atlantic Ocean Hurricanes
+       <a href="https://github.com/Simha-Kalimipalli/Big-Data-Challenge-2020">
+       <img src="icons/github.png"  style="width:20px;height:20px;"     alt="github">
+       </a>
+     </h2>
+ 
+     <ul>
+       <li><p>Developed a predictive model for estimation of frequency and intensity of hurricanes based on ocean heat content.  </p></li>
+       <li><p>Finalist in Big Data Challenge (BDC). Published in STEM Fellowship Journal.  </p></li>
+
+     </ul>
+ 
+   </div>
+ 
+ </div>
+ <br>
+ <hr class="new5">
+
+<!------------------------------------>
+
+ <!------>
+ <div class="div1">
+  <img class="img_right" src="images/dodgeblock.png"   alt="Avatar"/>
+ 
+   <div class="div2">
+     <h2> Dodgeblock
+       <a href="https://github.com/Simha-Kalimipalli/Dodgeblock">
+       <img src="icons/github.png"  style="width:20px;height:20px;"     alt="github">
+       </a>
+     </h2>
+ 
+     <ul>
+       <li><p>An arcade roam game with an interactive GUI with sound and time module utilization.  </p></li>
+
+     </ul>
+ 
+   </div>
+ 
+ </div>
+ <br>
+ <hr class="new5">
+<!------------------------------------------->
+ <div class="div1">
+  <img class="img_left" src="images/logo.jpg" alt="Avatar"/>
+ 
+ 
+   <div class="div2">
+     <h2> Bata-Quiz
+       <a href="https://github.com/Simha-Kalimipalli/sleepifier.ai">
+         <img src="icons/github.png"  style="width:20px;height:20px;"   alt="github">
+         </a>
+     </h2>
+     <ul>
+       <li><p>Utilized Project Management techniques such as Pert and Gant Charts to create an interactive arcade quiz game.</p></li>
+       <li><p>Presented at Google Kitchener in 2019.</p></li>
+     </ul>
+   </div>
+ 
+ </div>
+ <br>
+ <hr class="new5">
+<!------>
+
 
 <div class="div1">
- <img class="img_right" src="img_avatar.png" alt="Avatar"/>
+  <img class="img_right" src="images/sinkhole.png"   alt="Avatar"/>
+ 
+   <div class="div2">
+     <h2> Prediction of Sinkhole Occurrences using Geo-Analytics 
+       <a href="https://docs.google.com/presentation/d/1aTAndTomn6XK0yCHQKGk1CU5cwJr_cWj/edit?usp=sharing&ouid=112281553495638910648&rtpof=true&sd=true">
+       <img src="icons/powerpoint.jpg"  style="width:20px;height:20px;"     alt="github">
+       </a>
+     </h2>
+ 
+     <ul>
+       <li><p>Developed ArcGIS layers to analyze the primary factors that influence sinkhole formation.  </p></li>
+       <li><p>This study will aid policy makers to predict future sinkhole occurrences and to minimize damage to life and property. </p></li>
+       <li><p>Awarded silver medal at  Waterloo Wellington Science Fair, 2019.  </p></li>
+     </ul>
+ 
+   </div>
+ 
+ </div>
+ <br>
+ <hr class="new5">
 
-  <div class="div2">
-    <h2> Line 1 </h2>
-    <ul>
-      <li><p>Coffee</p></li>
-      <li><p>Coffee</p></li>
-      <li><p>Coffee</p></li>
-    </ul>
-  </div>
 
-</div>
-<br>
-<hr class="new5">
+ <!---->
+
+ <div class="div1">
+  <img class="img_left" src="images/rentap.png" alt="Avatar"/>
+ 
+ 
+   <div class="div2">
+     <h2> Rentap, MIT LaunchX Entrepreneurial Challenge  
+       <a href="hhttps://projects.invisionapp.com/share/9PPY6NZHRAK#/screens">
+         <img src="icons/invision.png"  style="width:20px;height:20px;"   alt="github">
+         </a>
+     </h2>
+     <ul>
+       <li><p>Collaborated with a team to design and develop “Rentap”, a P2P mobile app that allows individuals to rent their tools and services. </p></li>
+     </ul>
+   </div>
+ 
+ </div>
+ <br>
+ <hr class="new5">
+
+
+ <!------>
+
+
+<div class="div_main"><h2 id="work">Work</h2></div>
+<!---------------------------------->
+<div class="div1">
+  <img class="img_small" src="icons/boc.jpeg"   alt="Avatar"/>
+ 
+   <div class="div2">
+     <h2> Data Scientist - Bank of Canada
+       <a href="https://www.bankofcanada.ca/">
+       <img src="icons/link_logo.jpg"  style="width:20px;height:20px;"     alt="github">
+       </a>
+     </h2>
+ 
+     <ul>
+       <li><p>Developed Ensemble Bayesian inference Methodology for predicting time series variables.</p></li>
+       <li><p>Used Explainable AI concepts to increase interpretability of time series model results.  </p></li>
+     </ul>
+   </div>
+ </div>
+ <br>
+<!---->
+ <div class="div1">
+  <img class="img_small" src="icons/canada.jpg"   alt="Avatar"/>
+ 
+   <div class="div2">
+     <h2> Data Scientist - Natural Resources Canada
+       <a href="https://github.com/Simha-Kalimipalli/NEON">
+       <img src="icons/link_logo.jpg"  style="width:20px;height:20px;"     alt="github">
+       </a>
+     </h2>
+ 
+     <ul>
+       <li><p>Worked on various machine learning models for geo-spatial image processing using TensorFlow. (Publishing Pending) </p></li>
+       <li><p>Developed several analytical pipelines using Google Earth Engine API that will extract, transform, and analyze petabytes of data. </p></li>
+     </ul>
+   </div>
+ </div>
+ <br>
+ 
+<!----->
+<div class="div1">
+  <img class="img_small" src="icons/moe.png"   alt="Avatar"/>
+ 
+   <div class="div2">
+     <h2> Data Analyst - Ontario Ministry of Energy
+       <a href="https://www.ontario.ca/page/ministry-energy">
+       <img src="icons/link_logo.jpg"  style="width:20px;height:20px;"     alt="github">
+       </a>
+     </h2>
+ 
+     <ul>
+       <li><p>Worked on several regression, auto-regression and clustering models for estimating the electricity usage in the province of Ontario.  </p></li>
+       <li><p>Created several customer analytics dashboards for providing geo-demographic actionable insights for the ministry. </p></li>
+     </ul>
+   </div>
+ </div>
+ <br>
+
+ <!----->
+<div class="div1">
+  <img class="img_small" src="icons/agfa_healthcare_logo.png"  style="height:110px;" alt="Avatar"/>
+ 
+   <div class="div2">
+     <h2> Automation Developer - AGFA Healthcare
+       <a href="https://www.agfahealthcare.com/">
+       <img src="icons/link_logo.jpg"  style="width:20px;height:20px;"     alt="github">
+       </a>
+     </h2>
+ 
+     <ul>
+       <li><p>Created a windows application that analyzes the testing logs and creates statistical reports for managers to understand the performance of software product increasing the efficiency of software release by 10%.  </p></li>
+       <li><p>Designed, upgraded and tested Java classes using Agile methodologies increasing team productivity by a factor of 58 times. </p></li>
+     </ul>
+   </div>
+ </div>
+ <br>
+ 
+
+ <!----->
+<div class="div1">
+  <img class="img_small" src="icons/waterloo.png"   alt="Avatar"/>
+ 
+   <div class="div2">
+     <h2> Design Optimization Software Developer - University of Waterloo
+       <a href="https://epoch.uwaterloo.ca/doug/index.html">
+       <img src="icons/link_logo.jpg"  style="width:20px;height:20px;"     alt="github">
+       </a>
+     </h2>
+ 
+     <ul>
+       <li><p>Designed and developed a Python-based web application that runs a linear optimization model that will aid in minimizing the carbon emissions for vegan food choices.  </p></li>
+       <li><p>Created a novel approach to connect to back-end scientific models.  </p></li>
+     </ul>
+   </div>
+ </div>
+ <br>
+ 
+ 
+
 
 
 <hr>
 <div class="div_main"><h2 id="contact">Contact</h2></div>
 
-<ul>
-  <li><div class="div_main"> <p>Linkedin: https://www.linkedin.com/in/simha-kalimipalli/</p> </div></li>
-    
-  <li><div class="div_main"> <p> Github: https://github.com/Simha-Kalimipalli  </p> </div></li>
-  <li><div class="div_main"> <p> Email: simkpalli (at) gmail (dot) com </p> </div></li>
-</ul>
-<hr>
+
+<div class="row">
+  <div class="column">
+    <a href="https://www.linkedin.com/in/simha-kalimipalli/">
+    <img src="icons/linkedin.png" alt="linkedin" style="width:40px;height:40px">
+    </a>
+  </div>
+  <div class="column">
+    <a href="https://github.com/Simha-Kalimipalli">
+    <img src="icons/github.png" alt="github" style="width:40px;height:40px">
+    </a>
+  </div>
+  <div class="column">
+    <a>
+    <img src="icons/mail.png" alt="mail" style="width:40px;height:40px">
+    </a>
+    <p>(simkpalli (at) gmail (dot) com)</p>
+
+  </div>
+</div>
 
 
 
+<!---->
 
 </body>
 </html>
